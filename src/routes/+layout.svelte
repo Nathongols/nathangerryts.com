@@ -9,7 +9,7 @@
 
 <main>
     <!-- page content -->
-    <slot></slot>
+  <slot></slot>
 </main>
 
 <footer>
@@ -19,11 +19,19 @@
 <style>
     header {
         display: flex;
-        justify-content: center;
+        justify-content: left;
+        background-color: #f5efe6;
+        border-bottom-right-radius: 20px;
+        max-width: 250px;
     }
     main {
-        max-width: 960px;
-        margin: 20px;
+        background-color:#f5efe6;
+        max-width: 1500px;
+        min-height: 100vw;
+        border-radius: 20px;
+        display: flex;
+        margin: auto;
+        margin-top: 50px;
     }
     footer {
         text-align: center;

@@ -12,6 +12,7 @@
         display: flex;
     }
     .title h1 {
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
     }
 </style>

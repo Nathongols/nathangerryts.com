@@ -9,6 +9,7 @@
         Laboriosam excepturi eveniet accusamus.
     </p>
     <a href="/about">About</a>
+    <a href="/cube">Cube</a>
 </div>
 
 <style> 
