@@ -1,4 +1,5 @@
 <script>
+    import Donut from '$lib/donut.svelte'
 </script>
 
 <div class="index">
@@ -7,9 +8,9 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Cum qui sit, mollitia porro possimus illo dolores natus facilis nihil in quaerat numquam rerum accusamus cupiditate obcaecati! 
         Laboriosam excepturi eveniet accusamus.
+        
     </p>
     <a href="/about">About</a>
-    <a href="/cube">Cube</a>
 </div>
 
 <style> 
@@ -17,5 +18,7 @@
         text-align: center;
         display: block;
         margin: 20px auto;
+        z-index: 0;
+        background-color: brown;
     }
 </style>
