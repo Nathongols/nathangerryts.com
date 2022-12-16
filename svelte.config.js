@@ -11,4 +11,4 @@ const config = {
 	preprocess: seqPreprocessor([preprocess(), preprocessThrelte()])
 };
 
-export default config;
+export default config; 
