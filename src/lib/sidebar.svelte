@@ -7,8 +7,8 @@
         <nav class = "menu">
             <a href="/" class="menu-item">Home</a>
             <a href="/about" class="menu-item">About</a>
-            <a href="#" class="menu-item">Projects</a>
-            <a href="#" class="menu-item">Contact</a>
+            <a href="/" class="menu-item">Projects</a>
+            <a href="/" class="menu-item">Contact</a>
         </nav>
     </aside>
 </div>
