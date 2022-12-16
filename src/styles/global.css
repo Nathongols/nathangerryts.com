@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Space Mono');
 
 body{
-    background : #7895B2;
+    background : #0a0c0d;
     margin: 0;
+    overflow: hidden;
 }
 
 h1,h2,h3,h4,a,p,li {
-    color: #000;
-    font-family: 'Shadows Into Light';
+    color: rgb(255, 255, 255);
+    font-family: 'Space Mono';
     font-weight: normal;
 
 }

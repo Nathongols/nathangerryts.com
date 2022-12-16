@@ -1,24 +1,19 @@
 <script lang="ts">
     import Donut from '$lib/donut.svelte';
-    import Title from '$lib/title.svelte'
+    import Title from '$lib/title.svelte';
+    import Sidebar from '$lib/sidebar.svelte';
     import '../styles/global.css'
 </script>
- 
-<header>
-    <Title />
-    <h1>
-        Talkshow
-    </h1>
-
-</header>
 
 <div class="canvas-wrapper">
     <Donut />
 </div>
 
-
 <main>
-
+    <div class="sidebar">
+        <Title/>
+        <Sidebar/>
+    </div>
     <slot></slot>
 </main>
 
@@ -27,35 +22,35 @@
 </footer>
  
 <style>
-    header {
-        display: flex;
-        justify-content: left;
-        background-color: #f5efe6;
-        border-bottom-right-radius: 20px;
-        max-width: 250px;
-        z-index: 0;
-    }
     .canvas-wrapper{
         position: absolute;
         top: 0px;
         right: 0px;
         z-index: 1;
+        background-color: beige;
     }
-    h1 {
-        justify-self: right;
-        margin-left: 100px;
-        background-color: blue;
-        border-radius: 20px;
-        z-index: -1;
+    .sidebar{
+        background-color: #1a1a1a;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-top: 0px;
+        max-width: 110px;
+        height: 1080px;
+        z-index: 2;
+        transition: .17s ease-in-out;
     }
+    .sidebar:hover{
+        max-width: 200px;
+    }
+    
     main {
-        background-color:#f5efe6;
-        max-width: 1500px;
+        background-color:#121212;
+        max-width: 1920px;
         min-height: 100vw;
-        border-radius: 20px;
         display: flex;
         margin: auto;
-        margin-top: 50px;
+        margin-top: 0px;
+        overflow: hidden;
     }
     footer {
         text-align: center;
