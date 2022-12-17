@@ -1,22 +1,36 @@
 <script>
     import { fly } from 'svelte/transition'
+    import { onMount } from 'svelte';
+    import { _visible } from '../../pageHandler.js'
+
+    let visible = 0;
+
+    _visible.subscribe(value => {
+        visible = value;
+    });
+
 </script>
-<div class = "wrap">
-    <div class="about" in:fly="{{y:200, duration:1000}}" out:fly="{{y:200, duration:1000, delay:300}}">
-        <h2>About
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus reprehenderit totam consequatur est facere nulla reiciendis voluptatem recusandae nisi, aspernatur eveniet repellat obcaecati perspiciatis tempora veritatis vel. Eligendi, architecto!
-            </p>
-        </h2>
+{#if visible == 1}
+    <div class = "wrap">
+        <div class="about" in:fly="{{y:200, duration:1000}}" out:fly="{{y:200, duration:1000, delay:200}}"
+        on:outrostart="{() => _visible.set(0)}"
+        on:outroend="{() => _visible.set(1)}">
+            <h2>About
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus reprehenderit totam consequatur est facere nulla reiciendis voluptatem recusandae nisi, aspernatur eveniet repellat obcaecati perspiciatis tempora veritatis vel. Eligendi, architecto!
+                </p>
+            </h2>
+        </div>
+        <div class="education" in:fly="{{y:200, duration:1000, delay:200}}" out:fly="{{y:200, duration:1000}}">
+            <h2>Education
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus reprehenderit totam consequatur est facere nulla reiciendis voluptatem recusandae nisi, aspernatur eveniet repellat obcaecati perspiciatis tempora veritatis vel. Eligendi, architecto!
+                </p>
+            </h2>
+        </div>
     </div>
-    <div class="education" in:fly="{{y:200, duration:1000, delay:300}}" out:fly="{{y:200, duration:1000}}">
-        <h2>Education
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ducimus reprehenderit totam consequatur est facere nulla reiciendis voluptatem recusandae nisi, aspernatur eveniet repellat obcaecati perspiciatis tempora veritatis vel. Eligendi, architecto!
-            </p>
-        </h2>
-    </div>
-</div>
+{/if}
+
 <style>
     .wrap {
         display: flex;

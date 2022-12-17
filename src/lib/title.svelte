@@ -9,7 +9,8 @@
 
 <style>
     .title {
-        display: flex;
+        display:flex;
+        max-width: 20ch;
     }
     .title h1 {
         margin-top: 10px;

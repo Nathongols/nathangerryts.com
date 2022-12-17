@@ -51,7 +51,8 @@
 <div class="canvas-wrapper">
     <Canvas rendererParameters={{antialias: true}}>
         <PerspectiveCamera {...camera}>
-            <OrbitControls enableDamping/>
+            <OrbitControls enableDamping
+            autoRotate/>
         </PerspectiveCamera>
         
         <PointLight 
@@ -92,7 +93,7 @@
             geometry={new PlaneGeometry}
             material={new MeshStandardMaterial({color: 'black'})}
             position={{x:0,y:-2,z:0}}
-            rotation={{x:-1.5,y:0,z:0}}
+            rotation={{x:-1.6,y:0,z:0}}
             scale={500}
             receiveShadow
         />

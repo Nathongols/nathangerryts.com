@@ -1,5 +1,5 @@
 <script>
-
+    let visible = false
 </script>
 
 <div>
