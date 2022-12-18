@@ -10,7 +10,7 @@
 <style>
     .title {
         display:flex;
-        max-width: 20ch;
+        max-width: 8vw;
     }
     .title h1 {
         margin-top: 10px;

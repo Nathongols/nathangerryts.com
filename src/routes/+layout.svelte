@@ -38,10 +38,10 @@
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         margin-top: 0px;
-        max-width: 10vw;
+        max-width: 6vw;
         height: 100vh;
         z-index: 2;
-        transition: .17s ease-in-out;
+        transition: .3s ease-in-out;
     }
     .sidebar:hover{
         max-width: 11vw;

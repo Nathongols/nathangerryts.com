@@ -17,7 +17,7 @@
 <style>
     .side {
         flex: 1 1 0;
-        max-width: 300px;
+        max-width: 4vw;
         padding: 2rem 1rem;
     }
     .menu {
@@ -28,7 +28,8 @@
         padding: 1em;
         color: aliceblue;
         text-decoration: none;
-        transition: 0.2s linear;
+        transition: 0.14s linear;
+        overflow: hidden;
     }
     .menu .menu-item:hover {
         color: #ff4c4cbf;
