@@ -1,33 +1,37 @@
 <script lang="ts">
-    import Donut from '$lib/donut.svelte';
+    import { Canvas } from '@threlte/core'
+    import Scene from '$lib/scene.svelte';
     import Title from '$lib/title.svelte';
     import Sidebar from '$lib/sidebar.svelte';
     import '../styles/global.css'
 </script>
 
-<div class="canvas-wrapper">
-    <Donut />
-</div>
 
 <main>
     <div class="sidebar">
         <Title/>
         <Sidebar/>
     </div>
+    <div class="canvas-wrapper">
+        <Canvas>
+            <Scene/>
+        </Canvas>
+    </div>
     <slot></slot>
 </main>
 
 <footer>
-    <p></p>
+    <p>Taco</p>
 </footer>
  
 <style>
     .canvas-wrapper{
         position: absolute;
-        top: 0px;
-        right: 0px;
-        z-index: 1;
-        background-color: beige;
+        top: 0;
+        right: 0;
+        height: 1080px;
+        width: 1860px;
+        background-color: #161616;
     }
     .sidebar{
         background-color: #1a1a1a;

@@ -33,8 +33,8 @@
         top:auto;
         text-align: center;
         display: block;
-        margin: 20px auto;
-        height: 370px;
+        margin: 20px ;
+        height: 170px;
         width: 1560px;
         z-index: 3;
         background-color: #111111;
