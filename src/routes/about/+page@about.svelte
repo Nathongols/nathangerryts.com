@@ -61,15 +61,15 @@
         font-size: small;
     }
     .education{
-        position: absolute;
+        position: relative;
         top: 200px;
-        right: 100px;
+        right: -600px;
         display: flex;
         margin: 20px auto;
         min-width: 1000px;
         min-height: 100px;
         max-width: 400px;
-        max-height: 500px;
+        max-height: 150px;
         border-radius: 30px;
         z-index: 2;
         background-color: #111111;
