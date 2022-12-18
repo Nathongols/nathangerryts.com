@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Canvas } from '@threlte/core'
-    import Scene from '$lib/scene.svelte';
+    import Scene1 from '$lib/scenes/scene.svelte';
     import Title from '$lib/title.svelte';
     import Sidebar from '$lib/sidebar.svelte';
     import '../styles/global.css'
@@ -14,7 +14,7 @@
     </div>
     <div class="canvas-wrapper">
         <Canvas>
-            <Scene/>
+            <Scene1/>
         </Canvas>
     </div>
     <slot></slot>
@@ -29,8 +29,8 @@
         position: absolute;
         top: 0;
         right: 0;
-        height: 1080px;
-        width: 1860px;
+        height: 100vh;
+        width: 100vw;
         background-color: #161616;
     }
     .sidebar{
@@ -38,18 +38,18 @@
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
         margin-top: 0px;
-        max-width: 110px;
-        height: 1080px;
+        max-width: 10vw;
+        height: 100vh;
         z-index: 2;
         transition: .17s ease-in-out;
     }
     .sidebar:hover{
-        max-width: 200px;
+        max-width: 11vw;
     }
     
     main {
         background-color:#121212;
-        max-width: 1920px;
+        max-width: 100vw;
         min-height: 100vw;
         display: flex;
         margin: auto;
