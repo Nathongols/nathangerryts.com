@@ -34,17 +34,17 @@
 <style>
     .wrap {
         display: flex;
-        margin-left: 50px;
+        margin-left: 3%;
     }
     .about {
-        position: absolute;
+        position: relative;
         top:auto;
         display: flex;
         margin: 20px auto;
-        min-width: 1000px;
-        min-height: 100px;
-        max-width: 400px;
-        max-height: 500px;
+        min-width: 40vw;
+        min-height: 1vh;
+        max-width: 40vw;
+        max-height: 17vh;
         border-radius: 30px;
         z-index: 2;
         background-color: #111111;
@@ -54,22 +54,23 @@
         margin-left: 20px;
         margin-right: 20px;
         text-align: left;
+        font-size: 1.5vw;
     }
     p {
         margin: 10px auto;
         text-align: left;
-        font-size: small;
+        font-size: 0.8vw;
     }
     .education{
         position: relative;
         top: 200px;
-        right: -600px;
+        right: -3vw;
         display: flex;
         margin: 20px auto;
-        min-width: 1000px;
-        min-height: 100px;
-        max-width: 400px;
-        max-height: 150px;
+        min-width: 40vw;
+        min-height: 1vh;
+        max-width: 40vw;
+        max-height: 17vh;
         border-radius: 30px;
         z-index: 2;
         background-color: #111111;

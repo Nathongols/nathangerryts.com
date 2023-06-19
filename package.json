@@ -36,5 +36,8 @@
 		"vite": "next",
 		"wrangler": "^2.6.2"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"mdsvex": "^0.10.6"
+	}
 }
