@@ -26,19 +26,22 @@
 <style> 
     .wrap {
         display: flex;
-        margin-left: 50px ;
     }
     .index {
-        position: absolute;
-        top:auto;
-        text-align: center;
-        display: block;
-        margin: 20px ;
-        height: 170px;
-        width: 1560px;
-        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        padding: 20px; /* Add some padding for better spacing */
+        border-radius: 1.4vw;
+        z-index: 2;
         background-color: #111111;
-        border-radius: 30px;
+        color: #ffffff; /* Ensure text is readable */
+        max-width: 100%; /* Ensure it uses full available width */
+        width: auto; /* Allow width to adjust based on content */
+        height: auto;
+        max-height: 30vh; /* Set a reasonable max-height, adjust as needed */
+        overflow: auto; /* Add scrollbars if content exceeds max-height */
+        box-sizing: border-box; /* Ensure padding is included in height calculations */
     }
     p {
         font-size: medium;

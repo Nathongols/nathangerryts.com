@@ -4,11 +4,13 @@ body{
     background : #0a0c0d;
     margin: 0;
     overflow: hidden;
+    font-size: 100%;
 }
 
-h1,h2,h3,h4,a,p,li {
+h1,h2,h3,h4,a,li,p {
     color: rgb(255, 255, 255);
     font-family: 'Space Mono';
     font-weight: normal;
-    font-size: medium;
+    font-size: 0.875em;
 }
+

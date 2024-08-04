@@ -6,7 +6,6 @@
     import '../styles/global.css'
 </script>
 
-
 <main>
     <div class="sidebar">
         <Title/>
@@ -23,41 +22,34 @@
 <footer>
     <p>Taco</p>
 </footer>
- 
+
 <style>
-    .canvas-wrapper{
+    .canvas-wrapper {
         position: absolute;
         top: 0;
         right: 0;
         height: 100vh;
-        width: 100vw;
+        width: calc(100vw - 11vw); /* Adjusted to account for sidebar */
         background-color: #161616;
     }
-    .sidebar{
+    .sidebar {
         background-color: #1a1a1a;
-        -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        margin-top: 0px;
-        max-width: 6vw;
+        margin-top: 0;
+        width: 12vw;
         height: 100vh;
         z-index: 2;
-        transition: .3s ease-in-out;
+        min-width: 12vw;
     }
-    .sidebar:hover{
-        max-width: 11vw;
-    }
-    
     main {
-        background-color:#121212;
-        max-width: 100vw;
-        min-height: 100vw;
+        background-color: #121212;
+        width: 100vw;
+        height: 100vh;
         display: flex;
-        margin: auto;
-        margin-top: 0px;
+        margin: 0;
         overflow: hidden;
     }
-    footer {
-        text-align: center;
-    }
+
 
 </style>
+
