@@ -1,6 +1,5 @@
 <script>
     import { fly } from 'svelte/transition'
-    import { onMount } from 'svelte';
     import { _visible } from '../../pageHandler.js'
 
     let visible = 0;
@@ -46,7 +45,7 @@
                 </p>
             </div>
             <div class="portrait" in:fly="{{y:200, duration:1000, delay:200}}" out:fly="{{y:200, duration:1000}}">
-                <img src="/josh.PNG" alt="Description of image" class="image" />
+                <img src="/josh.png" alt="Description of image" class="image" />
             </div>
         </div>
     </div>

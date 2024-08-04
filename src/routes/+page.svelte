@@ -1,5 +1,4 @@
 <script>
-	import { onMount } from 'svelte';
     import { fly } from 'svelte/transition';
     import { _visible } from '../pageHandler.js'
 
@@ -13,7 +12,7 @@
 
 {#if visible == 1}
     <div class = "wrap">
-        <div class="index" in:fly="{{y:200, duration:1000}}" out:fly="{{y:200, duration:1000, delay:200}}"
+        <div class="index" transition:fly="{{y:200, duration:1000}}"
         on:outrostart="{() => _visible.set(0)}"
         on:outroend="{() => _visible.set(1)}">
             <h1>This page is under construction!

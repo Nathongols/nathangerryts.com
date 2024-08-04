@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     import { Canvas } from '@threlte/core'
     import Scene1 from '$lib/scenes/scene.svelte';
     import Title from '$lib/title.svelte';
