@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Space Mono');
 
-body{
-    background : #0a0c0d;
-    margin: 0;
-    overflow: hidden;
-    font-size: 100%;
+body {
+	background: #0a0c0d;
+	margin: 0;
+	overflow: hidden;
+	font-size: 100%;
 }
 
-h1,h2,h3,h4,a,li,p {
-    color: rgb(255, 255, 255);
-    font-family: 'Space Mono';
-    font-weight: normal;
-    font-size: 0.875em;
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+p {
+	color: rgb(255, 255, 255);
+	font-family: 'Space Mono';
+	font-weight: normal;
+	font-size: 0.875em;
 }
-
